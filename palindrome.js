@@ -1,22 +1,24 @@
 
 var isPalindrome = function(x) {
+
     const nmString=String(x);
     let left=0;
     let right=nmString.length-1;
+
     while(left<right){
+        
         if (nmString[left] !== nmString[right]){
-        return false;}
-    
+        return false;
+        }
 
     left++;
     right--;
-    }
 
+    }
     return true;
 
-    
-
 };
-colsone.log(isPalindrome(121));
-colsone.log(isPalindrome(-121));
-colsone.log(isPalindrome(10));
+
+console.log(isPalindrome(121));
+console.log(isPalindrome(-121));
+console.log(isPalindrome(10));
