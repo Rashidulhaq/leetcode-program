@@ -1,7 +1,7 @@
 
 var romanToInt = function (s) {
 const map = {
-    'I': 1,
+    'I': 1, 
     'V': 5,
     'X': 10,
     'L': 50,
@@ -24,6 +24,7 @@ const map = {
 
     return result;
 };
+
 console.log(romanToInt('III'));
 console.log(romanToInt('LVIII'));
 console.log(romanToInt('MCMXCIV'));
