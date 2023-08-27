@@ -15,12 +15,8 @@ var isPalindrome = function(x) {
     right--;
 
     }
-    return true;
-
-    
+    return true; 
 };
-
-
 console.log(isPalindrome(121));
 console.log(isPalindrome(-121));
 console.log(isPalindrome(10));
