@@ -1,0 +1,6 @@
+var lengthOfLastWord = function(s) {
+    // স্ট্রিংটাকে trim করে বাড়তি স্পেস সরিয়ে ফেলি এবং স্পেস দিয়ে ভাগ করি
+    let words = s.trim().split(" ");
+    // লাস্ট ওয়ার্ডের দৈর্ঘ্য রিটার্ন করি
+    return words[words.length - 1].length;
+};
