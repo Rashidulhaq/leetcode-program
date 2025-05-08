@@ -1,0 +1,13 @@
+var plusOne = function(digits) {
+    for (let i = digits.length - 1; i >= 0; i--) {
+        if (digits[i] < 9) {
+            digits[i]++; // increment করে return কর
+            return digits;
+        }
+        digits[i] = 0; // 9 হলে carry হবে
+    }
+
+    // সব digit 9 হলে, নতুন 1 বসিয়ে সামনে 0 যোগ করো
+    digits.unshift(1);
+    return digits;
+};
